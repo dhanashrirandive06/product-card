@@ -1,0 +1,193 @@
+body{
+    background-color: hsl(30, 38%, 92%);
+}
+
+.wrapper{
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.container{
+    position: absolute;
+    top: 50%;
+    display: flex;
+    left: 50%;
+    height:30rem;
+    width: 47%;
+    transform: translate(-50%, 30%);
+}
+
+.img-box-desktop{
+    display: block;
+    height: 100%;
+    width: 45%;
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+}
+
+.img-box-mobile{
+    display: none;
+}
+
+.text-box{
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(0, 0%, 100%);
+    width: 55%;
+    height: 100%;
+    padding: 0rem 1rem 0rem 2rem;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    /* justify-content: space-around; */
+}
+
+.text-perfume{
+    letter-spacing: 5px;
+    font-size: 14px;
+    color: hsl(228, 12%, 48%);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.text-heading{
+    font-family:'Fraunces', serif;
+    color: hsl(212, 21%, 14%);
+}
+
+.text-para{
+    font-size: 14px;
+    letter-spacing: 1px;
+    color: hsl(228, 12%, 48%);
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.5rem;
+}
+
+.price{
+    display: flex;
+    align-items: center;
+}
+
+.text-price{
+    color: hsl(158, 36%, 37%);
+    font-family:'Fraunces', serif;
+}
+
+.span-price{
+    color: hsl(228, 12%, 48%);
+    font-family: 'Montserrat', sans-serif;
+    margin-left: 1rem;
+    text-decoration:line-through;
+}
+
+.btn{
+    margin-bottom: 1rem;
+    width: 90%;
+    padding: 0.9rem 2rem;
+    background-color: hsl(158, 36%, 37%);
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+}
+
+.btn:hover{
+    background-color: hsl(157.94deg 82.85% 12.66%);
+}
+
+.btn-icon{
+   margin-right: 0.5rem;
+   font-size: 2rem;
+}
+
+
+
+@media (max-width: 1199.98px) { 
+    .container{
+        height:30rem;
+        width: 70%;
+    }
+    .img-box-mobile{
+        display: none;
+    }
+    .img-box-desktop{
+        width: 50%;
+        border-top-left-radius: 1rem;
+        border-bottom-left-radius: 0rem;
+        border-top-right-radius: 1rem;
+    }
+    .text-box{
+        width: 45%;
+    }
+    .btn{
+        margin-top: 1rem;
+    }
+   
+    
+}
+
+@media (max-width: 991.98px) { 
+    .container{
+        height:30rem;
+        width: 80%;
+    }
+
+    .img-box-desktop{
+        width: 48%;
+    }
+
+    .text-box{
+        width: 55%;
+    }
+
+    .img-box-mobile{
+        display: none;
+    }
+    .text-perfume{
+        margin-top: 0.5rem;
+    }
+    .btn{
+        margin-top: 0rem;
+    }
+}
+
+
+@media (max-width: 767.98px) { 
+
+    .container{
+        flex-direction: column;
+        height: 90vh;
+        width: 90vw;
+        transform: translate(-50%, 5%);
+    }
+
+    .img-box-desktop{
+        display: none;
+    }
+
+    .img-box-mobile{
+        display: block;
+        width: 100%;
+        height: 50%;
+        border-top-left-radius: 1rem;
+        border-bottom-left-radius: 0rem;
+        border-top-right-radius: 1rem;
+    }
+
+    .text-box{
+        height: 70%;
+        width: 90%;
+        margin: 0;
+        padding: 5%;
+        border-top-right-radius:0;
+        border-bottom-right-radius: 1rem;
+        border-bottom-left-radius: 1rem;
+    }
+    .btn{
+        width: 100%;
+    }
+}
+
+
+
